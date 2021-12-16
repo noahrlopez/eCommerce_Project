@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAV BAR CSS */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    min-height: 8vh;
+    background-color: black; opacity: .9;
+    width: 100%;
+    z-index: 1001;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: red;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 14px 16px;
+}
+
+.nav-links a:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.heading {
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+/* HOME PAGE CSS */
+
+.home-hero-image {
+    background-image: url("https://i.ytimg.com/vi/yNG9ezF-T5M/maxresdefault.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    padding: 0px;
+    position: relative;
+    z-index: 1000;
+  }
+
+.home-hero-text {
+    color: red;
+    font-size: 80px;
+    font-style: italic;
+    position: relative;
+    text-align: center;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black, 1px 1px 0 black;
+    top: 400px;
+  }
+
+.divider {
+    height: 100px;
+    background-color: black;
+    border: 1px solid rgb(10, 10, 10);
+}
+
+.divider > h1 {
+    color: red;
+    margin: 30px;
+    font-family: fantasy;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: rgb(29, 29, 29);
+}
+
+.home-container > h1 > img {
+    height: 580px;
+    width: 900px;
+    margin: 10px;
+    border: 1px solid red;
+    border-radius: 25px;
+}
+
+.home-container > h2 {
+    margin: 20px;
+    font-family:fantasy;
+    font-size: 35px;
+    font-style: italic;
+    color: red;
+    line-height: 70px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black, 1px 1px 0 black;
+}
+
+@media only screen and (max-width: 800px) {
+    .home-container {
+      flex-direction: column;
+    }
+
+    .home-container > h1 > img {
+        width: 780px;
+    }
+}
+
+/* PRODUCT PAGE CSS */
+
+.productContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .productContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.product {
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 20px;
+}
+
+.product:hover {
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px rgb(150, 149, 149);
+}
+
+.product > img {
+    height: 300px;
+    width: 200px;
+}
+
+.product > h2 {
+    margin: 5px 0;
+}
+
+.product > p {
+    font-weight: bold;
+    margin: 5px 0;
+    color: rgb(80, 80, 80);
+}
+
+.product-h1 {
+    background-color: black;
+    height: 100px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.product-h1 > h1 > img {
+    height: 70px;
+    width: 120px;
+}
+
+.productButton {
+    width: 80px;
+    margin: 5px 0;
+}
+
+.productButton a {
+    text-decoration: none;
+    color: black;
+}
+
+.product-hero-image {
+    background-image: url("images/abasi.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    padding: 0px;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .product-hero-text {
+    color: red;
+    font-size: 80px;
+    font-style: italic;
+    position: relative;
+    text-align: right;
+    padding-right: 200px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black, 1px 1px 0 black;
+    top: 90px;
+  }
+
+  /* CONTACT PAGE CSS */
+
+  .contact-body {
+      background-image: url("https://wallpapercave.com/wp/wp3139286.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black, 1px 1px 0 black;
+  }
+
+  .wrapper {
+      width: 100%;
+      max-width: 680px;
+      margin: 230px auto 190px;
+      padding: 20px;
+      color: white;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black, 1px 1px 0 black;
+  }
+
+  .content {
+      text-align: center;
+  }
+
+  .content h1 {
+      letter-spacing: 1px;
+  }
+
+  .form {
+      width: 100%;
+      margin: 25px 0;
+  }
+
+  .top-form,
+  .middle-form,
+  .bottom-form {
+      width: 100%;
+      min-height: 65px;
+      margin: 10px 0;
+  }
+
+  .form input[type="text"],
+  .form textarea {
+      padding: 15px 5px;
+      box-sizing: border-box;
+      width: 100%;
+      border: 1px solid black;
+      border-radius: 2px;
+      outline: none;
+      transition: all 0.9s ease;
+  }
+
+  .form input:focus,
+  .form textarea:focus {
+      border-color: red;
+      box-shadow: inset 0 1px 1px rgba(0,0,0, 0.0125),
+                  0 0 8px rgba(76,161,175, 0.5);      
+  }
+
+  .form .label {
+      margin-bottom: 5px;
+      text-transform: capitalize;
+  }
+
+  .top-form .inner-form {
+      width: 29.9%;
+      float: left;
+      margin-right: 5%;
+  }
+
+  .top-form .inner-form:last-child {
+      margin-right: 0;
+  }
+
+  .middle-form {
+      clear: both;
+  }
+
+  .bottom-form textarea {
+      height: 120px;
+  }
+
+  .btn {
+      height: 40px;
+      width: 80px;
+  }
+
+  /* CART CSS */
+
+  .cart-body {
+      text-align: center;
+  }
+
+  .cart-container {
+      margin: 200px;
+  }
+
+  .cart-container > h1 > img {
+      padding-right: 40px;
+  }
+
+  .cart-container > h2 {
+      margin-bottom: 20px;
+  }
+
+  .cart-container > h3 {
+    margin-bottom: 20px;
+  }
+
+  .cart-button {
+    height: 30px;
+    width: 200px;
+}
+  
+  .cart-button a {
+      text-decoration: none;
+      font-size: 15px;
+      color: black;
+  }
+
+
+
+  /* FOOTER CSS */
+
+  footer {
+    background: black;
+    bottom: 0;
+    color: red;
+    display: inline-block;
+    height: 80px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+    .fab {
+        padding: 20px;
+        font-size: 20px;
+        width: 60px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      .fa-facebook {
+        color: red;
+      }
+      
+      .fa-twitter {
+        color: red;
+      }
+
+      .fa-instagram {
+        color: red;
+      }
